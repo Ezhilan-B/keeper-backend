@@ -42,6 +42,7 @@ app.get('/noteList', function (req, res) {
         if(err){
             console.log(err);
         }else{
+            console.log("get request received \n" + collection);
             res.json(collection);
         }
     });
